@@ -2,6 +2,7 @@
   "name": "keris-sumenep-frontend",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://kerissumenep.com/",
   "type": "module",
   "scripts": {
     "dev": "vite",
