@@ -36,7 +36,7 @@ https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/scripts/verify.min.js
             <div className="container-full">
               <section className="content">
                 <Routes>
-                  <Route path="/" element={<Dashboard />} />
+                  <Route path="/dashboard" element={<Dashboard />} />
                 </Routes>
               </section>
             </div>
