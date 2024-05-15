@@ -137,12 +137,6 @@ export default function LandingPage() {
                             <a href="#screenshots">Screenshots</a>
                           </li>
                           <li>
-                            <a href="#pricing">Pricing</a>
-                          </li>
-                          <li>
-                            <a href="#blog">Blog</a>
-                          </li>
-                          <li>
                             <a href="#contact">Contact</a>
                           </li>
                           <li>
@@ -249,119 +243,33 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="goal-area section-padding gray-bg" id="goal">
-          <div className="container">
-            <div className="row flex-v-center">
-              <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <div className="area-content wow fadeInLeft" data-wow-delay="0.3s">
-                  <h3>Engage Your Service Automatically</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu smod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerce.</p>
-                  <ul className="features-list">
-                    <li>
-                      <i className="dripicons-checkmark"></i> Good Design Quality
-                    </li>
-                    <li>
-                      <i className="dripicons-checkmark"></i> Low Price
-                    </li>
-                    <li>
-                      <i className="dripicons-checkmark"></i> User Friendly
-                    </li>
-                    <li>
-                      <i className="dripicons-checkmark"></i> Easy Editable
-                    </li>
-                  </ul>
-                  <a href="#" className="read-more active">
-                    get started
-                  </a>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <div className="area-image-content hidden-sm hidden-xs wow fadeInRight" data-wow-delay="0.6s">
-                  <div className="features-screenshot-slider">
-                    <div className="single-screen">
-                      <img src="/assets-landing-page/assets/img/screenshots/screenshot-1.png" alt="" />
-                    </div>
-                    <div className="single-screen">
-                      <img src="/assets-landing-page/assets/img/screenshots/screenshot-2.png" alt="" />
-                    </div>
-                    <div className="single-screen">
-                      <img src="/assets-landing-page/assets/img/screenshots/screenshot-3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="process-two-area padding-100-50" id="process">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
-                <div className="area-title center">
-                  <h4 className="subtitle">working progress</h4>
-                  <h2>How Does Applic Apps Processing Works</h2>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-4 col-sm-6 col-xs-12">
-                <div className="single-process-box-two text-icon-box mb50 mt40 wow fadeInLeft" data-wow-delay="0.3s">
-                  <div className="process-icon-two">
-                    <i className="dripicons-lock-open"></i>
-                  </div>
-                  <h3>Log In First</h3>
-                  <p>Lorem ipsum dolor sit ameconecte ur adipisicing elit sed do eiusmod tempor incididunt labore dolore magnad</p>
-                </div>
-              </div>
-              <div className="col-md-4 col-sm-6 col-xs-12">
-                <div className="single-process-box-two text-icon-box mb50 mt40 wow fadeInLeft" data-wow-delay="0.6s">
-                  <div className="process-icon-two">
-                    <i className="dripicons-pulse"></i>
-                  </div>
-                  <h3>Data Analysis</h3>
-                  <p>Lorem ipsum dolor sit ameconecte ur adipisicing elit sed do eiusmod tempor incididunt labore dolore magnad</p>
-                </div>
-              </div>
-              <div className="col-md-4 col-sm-6 col-xs-12">
-                <div className="single-process-box-two text-icon-box hidden-sm wow fadeInLeft mb50 mt40" data-wow-delay="0.9s">
-                  <div className="process-icon-two">
-                    <i className="dripicons-basket"></i>
-                  </div>
-                  <h3>Show Result</h3>
-                  <p>Lorem ipsum dolor sit ameconecte ur adipisicing elit sed do eiusmod tempor incididunt labore dolore magnad</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="video-promo-area section-padding white" id="video">
-          <div className="area-bg"></div>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-12 col-xs-12">
-                <div className="area-content center wow fadeInUp">
-                  <div className="video-button mb40">
-                    <button className="video-popup" data-video-id="7TUOI23spt0">
-                      <i className="fa fa-play"></i>
-                    </button>
-                  </div>
-                  <h3>Watch Video Presentation</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                </div>
-              </div>
-            </div>
+  <div className="area-bg"></div>
+  <div className="container">
+    <div className="row">
+      <div className="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-12 col-xs-12">
+        <div className="area-content center wow fadeInUp">
+          <div className="video-button mb40">
+            <button className="video-popup" data-video-id="7TUOI23spt0">
+              <i className="fa fa-play"></i>
+            </button>
           </div>
-        </section>
-        <section className="screenshot-area fix section-padding" id="screenshots">
+          <h3>Tonton Video Presentasi</h3>
+          <p>Pelajari lebih lanjut tentang aplikasi TourKeris yang dapat memindai barcode pada setiap keris dan memberikan informasi lengkap dalam berbagai bahasa, termasuk Bahasa Madura, Inggris, dan Indonesia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section className="screenshot-area fix section-padding gray-bg" id="screenshots">
           <div className="container">
             <div className="row">
               <div className="col-md-4 col-sm-6 col-xs-12">
                 <div className="area-content xs-center xs-mb50">
-                  <h4 className="subtitle">Clean Design</h4>
-                  <h3>Applic Apps Screenshot</h3>
+                  <h4 className="subtitle">Desain Bersih</h4>
+                  <h3>Tangkapan Layar Aplikasi TourKeris</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis no strud exercitation ullamco laboris nisi ut aliquip exea commodo
-                    consequat.
+                    Aplikasi TourKeris menawarkan antarmuka yang bersih dan intuitif, memungkinkan pengguna untuk dengan mudah menjelajahi dan mempelajari setiap keris di Desa Aengtongtong melalui pemindaian barcode.
                   </p>
                 </div>
               </div>
@@ -390,354 +298,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="testmonial-area section-padding gray-bg fix" id="process">
-          <div className="testmonial-layers">
-            <div className="testmonial-layer-1" data-parallax='{"y": 200, "smoothness": 100}'>
-              <img src="/assets-landing-page/assets/img/bg-layers/layers-1.png" alt="" />
-            </div>
-            <div className="testmonial-layer-2" data-parallax='{"x": 80}'>
-              <img src="/assets-landing-page/assets/img/bg-layers/layers-2.png" alt="" />
-            </div>
-            <div className="testmonial-layer-3" data-parallax='{"x": -200, "smoothness": 100}'>
-              <img src="/assets-landing-page/assets/img/bg-layers/layers-3.png" alt="" />
-            </div>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
-                <div className="area-title center">
-                  <h4 className="subtitle">Testmonials</h4>
-                  <h2>What Our Client’s Say About Us</h2>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-12">
-                <div className="testmonial-slider">
-                  <div className="single-testmonial">
-                    <div className="author-content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temporse incididunt utses labore et dolore magna aliqua. Ut enim minim veniam quis.</p>
-                    </div>
-                    <div className="author-name-and-thumb">
-                      <div className="author-tumb">
-                        <img src="/assets-landing-page/assets/img/testmonial/author-1.png" alt="" />
-                      </div>
-                      <h4>Raidu Rossow</h4>
-                      <p>Web Designer</p>
-                    </div>
-                  </div>
-                  <div className="single-testmonial">
-                    <div className="author-content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temporse incididunt utses labore et dolore magna aliqua. Ut enim minim veniam quis.</p>
-                    </div>
-                    <div className="author-name-and-thumb">
-                      <div className="author-tumb">
-                        <img src="/assets-landing-page/assets/img/testmonial/author-2.png" alt="" />
-                      </div>
-                      <h4>Raidu Rossow</h4>
-                      <p>Web Designer</p>
-                    </div>
-                  </div>
-                  <div className="single-testmonial">
-                    <div className="author-content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temporse incididunt utses labore et dolore magna aliqua. Ut enim minim veniam quis.</p>
-                    </div>
-                    <div className="author-name-and-thumb">
-                      <div className="author-tumb">
-                        <img src="/assets-landing-page/assets/img/testmonial/author-3.png" alt="" />
-                      </div>
-                      <h4>Raidu Rossow</h4>
-                      <p>Web Designer</p>
-                    </div>
-                  </div>
-                  <div className="single-testmonial">
-                    <div className="author-content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temporse incididunt utses labore et dolore magna aliqua. Ut enim minim veniam quis.</p>
-                    </div>
-                    <div className="author-name-and-thumb">
-                      <div className="author-tumb">
-                        <img src="/assets-landing-page/assets/img/testmonial/author-1.png" alt="" />
-                      </div>
-                      <h4>Raidu Rossow</h4>
-                      <p>Web Designer</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="pricing-area padding-100-50" id="pricing">
-          <div className="container">
-            <div className="row flex-v-center">
-              <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <div className="area-title sm-center xs-center">
-                  <h4 className="subtitle">pricing plan</h4>
-                  <h2>Our Latest Pricing Plan </h2>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <div className="right price-right-menu sm-mb50 xs-mb50 sm-center xs-center">
-                  <ul className="price-menu">
-                    <li className="active">
-                      <a data-toggle="tab" href="#monthly">
-                        Monthly
-                      </a>
-                    </li>
-                    <li>
-                      <a data-toggle="tab" href="#yearly">
-                        Yearly
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-12">
-                <div className="tab-content">
-                  <div id="monthly" className="tab-pane fade in active">
-                    <div className="row">
-                      <div className="col-md-4">
-                        <div className="single-price mb50">
-                          <div className="price-header">
-                            <div className="price-thumb-hidding">
-                              <img src="/assets-landing-page/assets/img/icons/rocket.png" alt="" />
-                              <div className="price-rate">
-                                <span className="currency">$</span>45.99
-                              </div>
-                              <div className="price-title">Basic Plan</div>
-                            </div>
-                          </div>
-                          <div className="price-details">
-                            <ul>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Push Notifications
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Offline Synchronization
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> SQL Database
-                              </li>
-                              <li>
-                                <i className="dripicons-cross"></i> Speech & Text Analytics
-                              </li>
-                              <li>
-                                <i className="dripicons-cross"></i> 24/7 Support
-                              </li>
-                            </ul>
-                          </div>
-                          <div className="price-footer">
-                            <a href="#" className="purchase-button">
-                              Purchase
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div className="single-price mb50 active">
-                          <div className="sale-promo">
-                            popular <span>-50%</span>
-                          </div>
-                          <div className="price-header">
-                            <div className="price-thumb-hidding">
-                              <img src="/assets-landing-page/assets/img/icons/desktop.png" alt="" />
-                              <div className="price-rate">
-                                <span className="currency">$</span>45.99
-                              </div>
-                              <div className="price-title">Standard Plan</div>
-                            </div>
-                          </div>
-                          <div className="price-details">
-                            <ul>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Push Notifications
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Offline Synchronization
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> SQL Database
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Speech & Text Analytics
-                              </li>
-                              <li>
-                                <i className="dripicons-cross"></i> 24/7 Support
-                              </li>
-                            </ul>
-                          </div>
-                          <div className="price-footer">
-                            <a href="#" className="purchase-button">
-                              Purchase
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div className="single-price mb50">
-                          <div className="price-header">
-                            <div className="price-thumb-hidding">
-                              <img src="/assets-landing-page/assets/img/icons/witing-puzzle.png" alt="" />
-                              <div className="price-rate">
-                                <span className="currency">$</span>45.99
-                              </div>
-                              <div className="price-title">Premium Plan</div>
-                            </div>
-                          </div>
-                          <div className="price-details">
-                            <ul>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Push Notifications
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Offline Synchronization
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> SQL Database
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Speech & Text Analytics
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> 24/7 Support
-                              </li>
-                            </ul>
-                          </div>
-                          <div className="price-footer">
-                            <a href="#" className="purchase-button">
-                              Purchase
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="yearly" className="tab-pane fade">
-                    <div className="row">
-                      <div className="col-md-4">
-                        <div className="single-price mb50">
-                          <div className="price-header">
-                            <div className="price-thumb-hidding">
-                              <img src="/assets-landing-page/assets/img/icons/rocket.png" alt="" />
-                              <div className="price-rate">
-                                <span className="currency">$</span>45.99
-                              </div>
-                              <div className="price-title">Basic Plan</div>
-                            </div>
-                          </div>
-                          <div className="price-details">
-                            <ul>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Push Notifications
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Offline Synchronization
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> SQL Database
-                              </li>
-                              <li>
-                                <i className="dripicons-cross"></i> Speech & Text Analytics
-                              </li>
-                              <li>
-                                <i className="dripicons-cross"></i> 24/7 Support
-                              </li>
-                            </ul>
-                          </div>
-                          <div className="price-footer">
-                            <a href="#" className="purchase-button">
-                              Purchase
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div className="single-price mb50">
-                          <div className="sale-promo">
-                            popular <span>-50%</span>
-                          </div>
-                          <div className="price-header">
-                            <div className="price-thumb-hidding">
-                              <img src="/assets-landing-page/assets/img/icons/desktop.png" alt="" />
-                              <div className="price-rate">
-                                <span className="currency">$</span>45.99
-                              </div>
-                              <div className="price-title">Standard Plan</div>
-                            </div>
-                          </div>
-                          <div className="price-details">
-                            <ul>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Push Notifications
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Offline Synchronization
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> SQL Database
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Speech & Text Analytics
-                              </li>
-                              <li>
-                                <i className="dripicons-cross"></i> 24/7 Support
-                              </li>
-                            </ul>
-                          </div>
-                          <div className="price-footer">
-                            <a href="#" className="purchase-button">
-                              Purchase
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div className="single-price mb50">
-                          <div className="price-header">
-                            <div className="price-thumb-hidding">
-                              <img src="/assets-landing-page/assets/img/icons/witing-puzzle.png" alt="" />
-                              <div className="price-rate">
-                                <span className="currency">$</span>45.99
-                              </div>
-                              <div className="price-title">Premium Plan</div>
-                            </div>
-                          </div>
-                          <div className="price-details">
-                            <ul>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Push Notifications
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Offline Synchronization
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> SQL Database
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> Speech & Text Analytics
-                              </li>
-                              <li>
-                                <i className="dripicons-checkmark"></i> 24/7 Support
-                              </li>
-                            </ul>
-                          </div>
-                          <div className="price-footer">
-                            <a href="#" className="purchase-button">
-                              Purchase
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="faqs-area padding-top gray-bg" id="faqs">
+        <section className="faqs-area padding-top" id="faqs">
           <div className="container">
             <div className="row">
               <div className="col-md-6 col-lg-6 col-xs-12">
@@ -863,171 +424,96 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="blog-area padding-100-50" id="blog">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
-                <div className="area-title center">
-                  <h4 className="subtitle">Blog & News</h4>
-                  <h2>Our Latest News And Blogs</h2>
-                </div>
-              </div>
+        <section className="contact-area padding-100-50 gray-bg " id="contact">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
+        <div className="area-title center">
+          <h4 className="subtitle">Hubungi Kami</h4>
+          <h2>Hubungi Kami atau Mulai Berbicara dengan Kami</h2>
+        </div>
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+        <div className="contact-content padding50 mb50">
+          <div className="single-contact">
+            <div className="contact-icon">
+              <i className="dripicons-location"></i>
             </div>
-            <div className="row">
-              <div className="col-md-6 col-lg-4 col-sm-6 col-xs-12">
-                <div className="single-blog-item mb50 wow fadeInLeft" data-wow-delay="0.3s">
-                  <div className="post-media mb40">
-                    <a href="#">
-                      <img src="/assets-landing-page/assets/img/blog/blog-small-thumb-1.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div className="blog-post-details">
-                    <h3>
-                      <a href="#">How Improving Website Performan Can Help Save The Planet</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adies pisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" className="read-more">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-4 col-sm-6 col-xs-12">
-                <div className="single-blog-item mb50 wow fadeInLeft" data-wow-delay="0.6s">
-                  <div className="post-media mb40">
-                    <a href="#">
-                      <img src="/assets-landing-page/assets/img/blog/blog-small-thumb-2.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div className="blog-post-details">
-                    <h3>
-                      <a href="#">Better Collaboration By Bringing Des Into The Code Review Process</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adies pisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" className="read-more">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4 col-lg-4 col-sm-6 col-xs-12 hidden-md hidden-sm wow fadeInLeft" data-wow-delay="0.9s">
-                <div className="single-blog-item mb50">
-                  <div className="blog-post-details">
-                    <h3>
-                      <a href="#">Monthly Web Development Update DNS Over HTTPS, Notifications</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adies pisicing elit, sed do eiusmod tempor.</p>
-                    <a href="#" className="read-more">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-                <hr className="mb50" />
-                <div className="single-blog-item mb50">
-                  <div className="blog-post-details">
-                    <h3>
-                      <a href="#">Everything You Need To Know Abe Transactional Email Know</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adies pisicing elit, sed do eiusmod tempor.</p>
-                    <a href="#" className="read-more">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h3>Lokasi</h3>
+            <p>
+            Duko, Aeng Tong-tong, Kec. Saronggi, Kabupaten Sumenep, Jawa Timur 69467.
+            </p>
           </div>
-        </section>
-        <section className="contact-area padding-100-50 gray-bg" id="contact">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
-                <div className="area-title center">
-                  <h4 className="subtitle">Contact Us</h4>
-                  <h2>Call Us Or Started To Talk With Us</h2>
-                </div>
-              </div>
+          <div className="single-contact">
+            <div className="contact-icon">
+              <i className="dripicons-mail"></i>
             </div>
-            <div className="row">
-              <div className="col-md-5 col-lg-5 col-sm-12 col-xs-12">
-                <div className="contact-content padding50 mb50">
-                  <div className="single-contact">
-                    <div className="contact-icon">
-                      <i className="dripicons-location"></i>
-                    </div>
-                    <h3>Location</h3>
-                    <p>
-                      123 Chalingt Gates, <br /> Supper Market New York.
-                    </p>
-                  </div>
-                  <div className="single-contact">
-                    <div className="contact-icon">
-                      <i className="dripicons-mail"></i>
-                    </div>
-                    <h3>Contact</h3>
-                    <p>support@gmail.com</p>
-                    <p>infoApplic.net</p>
-                  </div>
-                  <div className="single-contact">
-                    <div className="contact-icon">
-                      <i className="dripicons-phone"></i>
-                    </div>
-                    <h3>Contact</h3>
-                    <p>+8 123 45 678 99</p>
-                    <p>+1 231 45 687 99</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12">
-                <div className="contact-form mb50">
-                  <form action="https://quomodosoft.com/html/applic/applic/process.php" id="contact-form" method="post">
-                    <div className="row">
-                      <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div className="form-group" id="name-field">
-                          <div className="form-input">
-                            <label for="form-name">Your Name</label>
-                            <input type="text" className="form-control" id="form-name" name="form-name" placeholder="Jhonathan Doe" required />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div className="form-group" id="email-field">
-                          <div className="form-input">
-                            <label for="form-email">Your Mail</label>
-                            <input type="email" className="form-control" id="form-email" name="form-email" placeholder="support@mail.com" required />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div className="form-group" id="phone-field">
-                          <div className="form-input">
-                            <label for="form-phone">Your Subject</label>
-                            <input type="text" className="form-control" id="form-phone" name="form-phone" placeholder="Subject.." />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div className="form-group" id="message-field">
-                          <div className="form-input">
-                            <label for="form-message">Your Message</label>
-                            <textarea className="form-control" rows="6" id="form-message" name="form-message" placeholder="Your Your Message" required></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div className="form-group mb0">
-                          <button className="read-more active" type="submit">
-                            Send Message
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+            <h3>Kontak Email</h3>
+            <p>support@tourkeris.com</p>
+            <p>info@tourkeris.com</p>
           </div>
-        </section>
+          <div className="single-contact">
+            <div className="contact-icon">
+              <i className="dripicons-phone"></i>
+            </div>
+            <h3>Nomor Telepon</h3>
+            <p>+62 812 3456 7890</p>
+            <p>+62 812 9876 5432</p>
+          </div>
+        </div>
+      </div>
+      <div className="col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12">
+        <div className="contact-form mb50">
+          <form action="https://yourwebsite.com/process.php" id="contact-form" method="post">
+            <div className="row">
+              <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div className="form-group" id="name-field">
+                  <div className="form-input">
+                    <label for="form-name">Nama Anda</label>
+                    <input type="text" className="form-control" id="form-name" name="form-name" placeholder="Nama Lengkap" required />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div className="form-group" id="email-field">
+                  <div className="form-input">
+                    <label for="form-email">Email Anda</label>
+                    <input type="email" className="form-control" id="form-email" name="form-email" placeholder="email@domain.com" required />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div className="form-group" id="subject-field">
+                  <div className="form-input">
+                    <label for="form-subject">Subjek</label>
+                    <input type="text" className="form-control" id="form-subject" name="form-subject" placeholder="Subjek Pesan" />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div className="form-group" id="message-field">
+                  <div className="form-input">
+                    <label for="form-message">Pesan Anda</label>
+                    <textarea className="form-control" rows="6" id="form-message" name="form-message" placeholder="Tuliskan pesan Anda di sini" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div className="form-group mb0">
+                  <button className="read-more active" type="submit">
+                    Kirim Pesan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
         {/* <footer className="footer-area white relative ">
           <div className="area-bg"></div>
           <div className="footer-top-area section-padding">
