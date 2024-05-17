@@ -1,15 +1,13 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
 export default function UpdateBenda() {
-  const [nama, setNama] = useState("");
-  const [deskripsi, setDeskripsi] = useState("");
   const [data, setData] = useState({
     id: null,
-    kode_benda: "",
-    nama: "",
-    deskripsi: "",
+    kode_benda: '',
+    nama: '',
+    deskripsi: '',
   });
   let { code } = useParams();
   const navigate = useNavigate();
@@ -51,7 +49,7 @@ export default function UpdateBenda() {
         }
       );
       console.log(response.data);
-      navigate("/benda");
+      navigate('/benda');
     } catch (error) {
       console.log(error);
     }
@@ -59,68 +57,70 @@ export default function UpdateBenda() {
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [code]);
+
   return (
     <>
       <div className="row">
-        <div class="col-lg-8 col-12 mx-auto">
-          <div class="box">
-            <div class="box-header with-border">
-              <h4 class="box-title">Update Benda</h4>
+        <div className="col-lg-8 col-12 mx-auto">
+          <div className="box">
+            <div className="box-header with-border">
+              <h4 className="box-title">Update Benda</h4>
             </div>
-            <div class="form">
-              <div class="box-body">
-                <div class="form-group">
+            <div className="form">
+              <div className="box-body">
+                <div className="form-group">
                   <label>Nama Benda</label>
-                  <div class="input-group mb-3">
+                  <div className="input-group mb-3">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Nama Benda"
-                      defaultValue={data.nama}
+                      value={data.nama}
                       onChange={(e) => {
-                        handleEditDataChange("nama", e.target.value);
+                        handleEditDataChange('nama', e.target.value);
                       }}
                     />
-                    <div class="input-group-append">
-                      <span class="input-group-text">
-                        <i class="ti-user"></i>
+                    <div className="input-group-append">
+                      <span className="input-group-text">
+                        <i className="ti-user"></i>
                       </span>
                     </div>
                   </div>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                   <label>Deskripsi</label>
-                  <div class="input-group mb-3">
+                  <div className="input-group mb-3">
                     <textarea
                       rows="5"
-                      class="form-control"
-                      placeholder="About Project"
-                      defaultValue={data.deskripsi}
+                      className="form-control"
+                      placeholder="Deskripsi Benda"
+                      value={data.deskripsi}
                       onChange={(e) => {
-                        handleEditDataChange("deskripsi", e.target.value);
+                        handleEditDataChange('deskripsi', e.target.value);
                       }}
                     ></textarea>
-                    <div class="input-group-append">
-                      <span class="input-group-text">
-                        <i class="ti-pencil-alt2"></i>
+                    <div className="input-group-append">
+                      <span className="input-group-text">
+                        <i className="ti-pencil-alt2"></i>
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="box-footer text-right">
+              <div className="box-footer text-right">
                 <button
                   type="button"
-                  class="btn btn-rounded btn-warning btn-outline mr-1"
+                  className="btn btn-rounded btn-warning btn-outline mr-1"
+                  onClick={() => navigate('/benda')}
                 >
-                  <i class="ti-trash"></i> Cancel
+                  <i className="ti-trash"></i> Cancel
                 </button>
                 <button
                   onClick={update}
-                  class="btn btn-rounded btn-primary btn-outline"
+                  className="btn btn-rounded btn-primary btn-outline"
                 >
-                  <i class="ti-save-alt"></i> Save
+                  <i className="ti-save-alt"></i> Save
                 </button>
               </div>
             </div>
