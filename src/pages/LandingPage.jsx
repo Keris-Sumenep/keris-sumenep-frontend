@@ -185,7 +185,7 @@ export default function LandingPage() {
                       <a className="xs-mb20" href="#">
                         download
                       </a>
-                      <a href="#">
+                      <a href="/login">
                         Login <i className="fa fa-long-arrow-right"></i>
                       </a>
                     </div>

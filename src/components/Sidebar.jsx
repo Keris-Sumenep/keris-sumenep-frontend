@@ -1,4 +1,16 @@
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 const Sidebar = () => {
+  const navigate = useNavigate();
+  const logout = async () => {
+    try {
+      await axios.delete(`${import.meta.env.VITE_APP_APIURL}/logout`);
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <>
       <aside className="main-sidebar">
@@ -9,7 +21,7 @@ const Sidebar = () => {
                 <div className="d-flex align-items-center justify-content-center">
                   <img src="../images/logo-dark.png" alt="" />
                   <h3>
-                    <b>Sunny</b> Admin
+                    <b>Keris</b> Sumenep
                   </h3>
                 </div>
               </a>
@@ -17,521 +29,34 @@ const Sidebar = () => {
           </div>
           <ul className="sidebar-menu" data-widget="tree">
             <li>
-              <a href="index.html">
-                <i data-feather="pie-chart"></i>
+              <a
+                href="/dashboard"
+                style={{
+                  display: "flex",
+                  height: "auto",
+                  alignItems: "center",
+                  gap: "5px",
+                }}
+              >
+                <span
+                  class="mdi mdi-chart-pie"
+                  style={{ fontSize: "20px" }}
+                ></span>
                 <span>Dashboard</span>
               </a>
             </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="message-circle"></i>
-                <span>Application</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="chat.html">
-                    <i className="ti-more"></i>Chat
-                  </a>
-                </li>
-                <li>
-                  <a href="calendar.html">
-                    <i className="ti-more"></i>Calendar
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="mail"></i> <span>Mailbox</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="mailbox_inbox.html">
-                    <i className="ti-more"></i>Inbox
-                  </a>
-                </li>
-                <li>
-                  <a href="mailbox_compose.html">
-                    <i className="ti-more"></i>Compose
-                  </a>
-                </li>
-                <li>
-                  <a href="mailbox_read_mail.html">
-                    <i className="ti-more"></i>Read
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="file"></i>
-                <span>Pages</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="profile.html">
-                    <i className="ti-more"></i>Profile
-                  </a>
-                </li>
-                <li>
-                  <a href="invoice.html">
-                    <i className="ti-more"></i>Invoice
-                  </a>
-                </li>
-                <li>
-                  <a href="gallery.html">
-                    <i className="ti-more"></i>Gallery
-                  </a>
-                </li>
-                <li>
-                  <a href="faq.html">
-                    <i className="ti-more"></i>FAQs
-                  </a>
-                </li>
-                <li>
-                  <a href="timeline.html">
-                    <i className="ti-more"></i>Timeline
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="header nav-small-cap">User Interface</li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="grid"></i>
-                <span>Components</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="components_alerts.html">
-                    <i className="ti-more"></i>Alerts
-                  </a>
-                </li>
-                <li>
-                  <a href="components_badges.html">
-                    <i className="ti-more"></i>Badge
-                  </a>
-                </li>
-                <li>
-                  <a href="components_buttons.html">
-                    <i className="ti-more"></i>Buttons
-                  </a>
-                </li>
-                <li>
-                  <a href="components_sliders.html">
-                    <i className="ti-more"></i>Sliders
-                  </a>
-                </li>
-                <li>
-                  <a href="components_dropdown.html">
-                    <i className="ti-more"></i>Dropdown
-                  </a>
-                </li>
-                <li>
-                  <a href="components_modals.html">
-                    <i className="ti-more"></i>Modal
-                  </a>
-                </li>
-                <li>
-                  <a href="components_nestable.html">
-                    <i className="ti-more"></i>Nestable
-                  </a>
-                </li>
-                <li>
-                  <a href="components_progress_bars.html">
-                    <i className="ti-more"></i>Progress Bars
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="credit-card"></i>
-                <span>Cards</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="card_advanced.html">
-                    <i className="ti-more"></i>Advanced Cards
-                  </a>
-                </li>
-                <li>
-                  <a href="card_basic.html">
-                    <i className="ti-more"></i>Basic Cards
-                  </a>
-                </li>
-                <li>
-                  <a href="card_color.html">
-                    <i className="ti-more"></i>Cards Color
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="hard-drive"></i>
-                <span>Content</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="content_typography.html">
-                    <i className="ti-more"></i>Typography
-                  </a>
-                </li>
-                <li>
-                  <a href="content_media.html">
-                    <i className="ti-more"></i>Media
-                  </a>
-                </li>
-                <li>
-                  <a href="content_grid.html">
-                    <i className="ti-more"></i>Grid
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="package"></i>
-                <span>Utilities</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="utilities_border.html">
-                    <i className="ti-more"></i>Border
-                  </a>
-                </li>
-                <li>
-                  <a href="utilities_color.html">
-                    <i className="ti-more"></i>Color
-                  </a>
-                </li>
-                <li>
-                  <a href="utilities_ribbons.html">
-                    <i className="ti-more"></i>Ribbons
-                  </a>
-                </li>
-                <li>
-                  <a href="utilities_tab.html">
-                    <i className="ti-more"></i>Tabs
-                  </a>
-                </li>
-                <li>
-                  <a href="utilities_animations.html">
-                    <i className="ti-more"></i>Animation
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="edit-2"></i>
-                <span>Icons</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="icons_fontawesome.html">
-                    <i className="ti-more"></i>Font Awesome
-                  </a>
-                </li>
-                <li>
-                  <a href="icons_glyphicons.html">
-                    <i className="ti-more"></i>Glyphicons
-                  </a>
-                </li>
-                <li>
-                  <a href="icons_material.html">
-                    <i className="ti-more"></i>Material Icons
-                  </a>
-                </li>
-                <li>
-                  <a href="icons_themify.html">
-                    <i className="ti-more"></i>Themify Icons
-                  </a>
-                </li>
-                <li>
-                  <a href="icons_simpleline.html">
-                    <i className="ti-more"></i>Simple Line Icons
-                  </a>
-                </li>
-                <li>
-                  <a href="icons_cryptocoins.html">
-                    <i className="ti-more"></i>Cryptocoins Icons
-                  </a>
-                </li>
-                <li>
-                  <a href="icons_flag.html">
-                    <i className="ti-more"></i>Flag Icons
-                  </a>
-                </li>
-                <li>
-                  <a href="icons_weather.html">
-                    <i className="ti-more"></i>Weather Icons
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="inbox"></i>
-                <span>Forms</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="forms_advanced.html">
-                    <i className="ti-more"></i>Advanced Elements
-                  </a>
-                </li>
-                <li>
-                  <a href="forms_editors.html">
-                    <i className="ti-more"></i>Editors
-                  </a>
-                </li>
-                <li>
-                  <a href="forms_code_editor.html">
-                    <i className="ti-more"></i>Code Editor
-                  </a>
-                </li>
-                <li>
-                  <a href="forms_validation.html">
-                    <i className="ti-more"></i>Form Validation
-                  </a>
-                </li>
-                <li>
-                  <a href="forms_wizard.html">
-                    <i className="ti-more"></i>Form Wizard
-                  </a>
-                </li>
-                <li>
-                  <a href="forms_general.html">
-                    <i className="ti-more"></i>General Elements
-                  </a>
-                </li>
-                <li>
-                  <a href="forms_dropzone.html">
-                    <i className="ti-more"></i>Dropzone
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="server"></i>
-                <span>Tables</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="tables_simple.html">
-                    <i className="ti-more"></i>Simple tables
-                  </a>
-                </li>
-                <li>
-                  <a href="tables_data.html">
-                    <i className="ti-more"></i>Data tables
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="pie-chart"></i>
-                <span>Charts</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="charts_chartjs.html">
-                    <i className="ti-more"></i>ChartJS
-                  </a>
-                </li>
-                <li>
-                  <a href="charts_flot.html">
-                    <i className="ti-more"></i>Flot
-                  </a>
-                </li>
-                <li>
-                  <a href="charts_inline.html">
-                    <i className="ti-more"></i>Inline
-                  </a>
-                </li>
-                <li>
-                  <a href="charts_morris.html">
-                    <i className="ti-more"></i>Morris
-                  </a>
-                </li>
-                <li>
-                  <a href="charts_peity.html">
-                    <i className="ti-more"></i>Peity
-                  </a>
-                </li>
-                <li>
-                  <a href="charts_chartist.html">
-                    <i className="ti-more"></i>Chartist
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="map"></i>
-                <span>Map</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="map_google.html">
-                    <i className="ti-more"></i>Google Map
-                  </a>
-                </li>
-                <li>
-                  <a href="map_vector.html">
-                    <i className="ti-more"></i>Vector Map
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="alert-triangle"></i>
-                <span>Authentication</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="auth_login.html">
-                    <i className="ti-more"></i>Login
-                  </a>
-                </li>
-                <li>
-                  <a href="auth_register.html">
-                    <i className="ti-more"></i>Register
-                  </a>
-                </li>
-                <li>
-                  <a href="auth_lockscreen.html">
-                    <i className="ti-more"></i>Lockscreen
-                  </a>
-                </li>
-                <li>
-                  <a href="auth_user_pass.html">
-                    <i className="ti-more"></i>Password
-                  </a>
-                </li>
-                <li>
-                  <a href="error_404.html">
-                    <i className="ti-more"></i>Error 404
-                  </a>
-                </li>
-                <li>
-                  <a href="error_maintenance.html">
-                    <i className="ti-more"></i>Maintenance
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="header nav-small-cap">EXTRA</li>
-
-            <li className="treeview">
-              <a href="#">
-                <i data-feather="layers"></i>
-                <span>Multilevel</span>
-                <span className="pull-right-container">
-                  <i class="mdi mdi-arrow-right pull-right"></i>
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li>
-                  <a href="#">Level One</a>
-                </li>
-                <li className="treeview">
-                  <a href="#">
-                    Level One
-                    <span className="pull-right-container">
-                      <i class="mdi mdi-arrow-right pull-right"></i>
-                    </span>
-                  </a>
-                  <ul className="treeview-menu">
-                    <li>
-                      <a href="#">Level Two</a>
-                    </li>
-                    <li className="treeview">
-                      <a href="#">
-                        Level Two
-                        <span className="pull-right-container">
-                          <i class="mdi mdi-arrow-right pull-right"></i>
-                        </span>
-                      </a>
-                      <ul className="treeview-menu">
-                        <li>
-                          <a href="#">Level Three</a>
-                        </li>
-                        <li>
-                          <a href="#">Level Three</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Level One</a>
-                </li>
-              </ul>
-            </li>
-
             <li>
-              <a href="auth_login.html">
-                <i data-feather="lock"></i>
-                <span>Log Out</span>
+              <a
+                href="/benda"
+                style={{
+                  display: "flex",
+                  height: "auto",
+                  alignItems: "center",
+                  gap: "5px",
+                }}
+              >
+                <span class="mdi mdi-cube" style={{ fontSize: "20px" }}></span>
+                <span>Benda</span>
               </a>
             </li>
           </ul>
@@ -560,11 +85,11 @@ const Sidebar = () => {
           </a>
 
           <a
-            href="javascript:void(0)"
             className="link"
             data-toggle="tooltip"
             title=""
             data-original-title="Logout"
+            onClick={logout}
           >
             <i className="ti-lock"></i>
           </a>
