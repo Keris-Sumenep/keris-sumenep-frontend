@@ -276,7 +276,7 @@ export default function LandingPage() {
               <div className="col-md-8 col-sm-6 col-xs-12">
                 <div className="screenshot-slider">
                   <div className="single-screenshot">
-                    <img src="/assets-landing-page/assets/img/screenshots/screenshot-1.png" alt="" />
+                    <img src="/assets-landing-page/assets/img/screenshots/ss1.png" alt="" />
                   </div>
                   <div className="single-screenshot">
                     <img src="/assets-landing-page/assets/img/screenshots/screenshot-2.png" alt="" />
@@ -313,23 +313,21 @@ export default function LandingPage() {
               </div>
               <div className="col-md-6 col-lg-6 col-xs-12">
                 <div className="area-content sm-mb80 xs-mb50">
-                  <h4 className="subtitle font500 alt-font uppercase">ask questions</h4>
-                  <h2>Frequently Asked Questions</h2>
+                  <h4 className="subtitle font500 alt-font uppercase">Tanya Jawab</h4>
+                  <h2>Pertanyaan yang Sering Diajukan</h2>
                   <div className="panel-group sm-mt50 xs-mt50" id="accordion-main">
                     <div className="panel panel-default active">
                       <div className="panel-heading">
                         <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseOne">
                           <div className="panel-title">
-                            <span>01</span>
-                            <span>Creating The Feature Queries Manager ?</span>
+                            <span>Bagaimana cara memindai barcode keris?</span>
                             <i className="pull-right fa fa-angle-down"></i>
                           </div>
                         </a>
                       </div>
                       <div id="collapseOne" className="panel-collapse collapse in">
                         <div className="panel-body">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                          aute dolor in reprehenderit in voluptate velit esse cillum dolore
+                        Buka aplikasi TourKeris, arahkan kamera ponsel Anda ke barcode yang ada pada keris, dan aplikasi akan secara otomatis memindai dan menampilkan informasi terkait keris tersebut.
                         </div>
                       </div>
                     </div>
@@ -337,16 +335,14 @@ export default function LandingPage() {
                       <div className="panel-heading">
                         <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseTwo">
                           <div className="panel-title">
-                            <span>02</span>
-                            <span>Building Diverse Design Teams ?</span>
+                          <span>Informasi tentang keris tersedia dalam beberapa bahasa?</span>
                             <i className="pull-right fa fa-angle-down"></i>
                           </div>
                         </a>
                       </div>
                       <div id="collapseTwo" className="panel-collapse collapse">
                         <div className="panel-body">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                          aute dolor in reprehenderit in voluptate velit esse cillum dolore
+                        Informasi tentang keris tersedia dalam tiga bahasa: Madura, Inggris, dan Indonesia. Anda dapat memilih bahasa yang diinginkan di pengaturan aplikasi.
                         </div>
                       </div>
                     </div>
@@ -354,16 +350,14 @@ export default function LandingPage() {
                       <div className="panel-heading">
                         <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseThree">
                           <div className="panel-title">
-                            <span>03</span>
-                            <span>Augmented And Virtual Reality Icon ?</span>
+                          <span>Apakah aplikasi ini menyediakan informasi dengan audio?</span>
                             <i className="pull-right fa fa-angle-down"></i>
                           </div>
                         </a>
                       </div>
                       <div id="collapseThree" className="panel-collapse collapse">
                         <div className="panel-body">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                          aute dolor in reprehenderit in voluptate velit esse cillum dolore
+                        Ya, aplikasi TourKeris menyediakan informasi tentang setiap keris dengan audio dalam bahasa yang Anda pilih. Anda dapat mendengarkan penjelasan sambil melihat keris.
                         </div>
                       </div>
                     </div>
@@ -371,16 +365,14 @@ export default function LandingPage() {
                       <div className="panel-heading">
                         <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseFour">
                           <div className="panel-title">
-                            <span>04</span>
-                            <span>How To Create A Flat Vector ?</span>
+                          <span>Apakah saya perlu internet untuk menggunakan aplikasi?</span>
                             <i className="pull-right fa fa-angle-down"></i>
                           </div>
                         </a>
                       </div>
                       <div id="collapseFour" className="panel-collapse collapse">
                         <div className="panel-body">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                          aute dolor in reprehenderit in voluptate velit esse cillum dolore
+                        Anda memerlukan koneksi internet untuk mengunduh aplikasi dan pembaruan informasi. Namun, setelah data tersimpan di aplikasi, Anda bisa menggunakan fitur pemindaian barcode dan mendengarkan informasi secara offline.
                         </div>
                       </div>
                     </div>
@@ -388,16 +380,14 @@ export default function LandingPage() {
                       <div className="panel-heading">
                         <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseFive">
                           <div className="panel-title">
-                            <span>05</span>
-                            <span>How To Create A Flat Vector ?</span>
+                          <span>Bagaimana cara mendapatkan aplikasi TourKeris?</span>
                             <i className="pull-right fa fa-angle-down"></i>
                           </div>
                         </a>
                       </div>
                       <div id="collapseFive" className="panel-collapse collapse">
                         <div className="panel-body">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                          aute dolor in reprehenderit in voluptate velit esse cillum dolore
+                        Anda dapat mengunduh aplikasi TourKeris dari Google Play Store untuk perangkat Android atau App Store untuk perangkat iOS.
                         </div>
                       </div>
                     </div>
@@ -405,16 +395,14 @@ export default function LandingPage() {
                       <div className="panel-heading">
                         <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseSix">
                           <div className="panel-title">
-                            <span>06</span>
-                            <span>How To Create A Flat Vector ?</span>
+                          <span>Apakah ada biaya untuk menggunakan aplikasi ini?</span>
                             <i className="pull-right fa fa-angle-down"></i>
                           </div>
                         </a>
                       </div>
                       <div id="collapseSix" className="panel-collapse collapse">
                         <div className="panel-body">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                          aute dolor in reprehenderit in voluptate velit esse cillum dolore
+                        Aplikasi TourKeris dapat diunduh dan digunakan secara gratis.
                         </div>
                       </div>
                     </div>
