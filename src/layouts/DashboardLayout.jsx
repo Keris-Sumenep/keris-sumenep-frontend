@@ -7,6 +7,8 @@ import { Helmet } from "react-helmet";
 import Benda from "../pages/benda";
 import CreateBenda from "../pages/benda/create";
 import UpdateBenda from "../pages/benda/update";
+import GambarBenda from "../pages/gambar-benda";
+import CreateGambarBenda from "../pages/gambar-benda/create";
 
 export default function DashboardLayout() {
   return (
@@ -50,6 +52,14 @@ https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/scripts/verify.min.js
                   <Route path="/benda/create" element={<CreateBenda />} />
                   <Route path="/benda/update/:code" element={<UpdateBenda />} />
                   {/* route benda */}
+
+                  {/* route gambar benda */}
+                  <Route path="/gambar-benda" element={<GambarBenda />} />
+                  <Route
+                    path="/gambar-benda/create/:code"
+                    element={<CreateGambarBenda />}
+                  />
+                  {/* route gambar benda */}
                 </Routes>
               </section>
             </div>
