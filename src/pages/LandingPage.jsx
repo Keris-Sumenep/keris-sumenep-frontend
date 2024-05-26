@@ -611,8 +611,8 @@ export default function LandingPage() {
                       <i className="dripicons-mail"></i>
                     </div>
                     <h3>Kontak Email</h3>
-                    <p>support@tourkeris.com</p>
-                    <p>info@tourkeris.com</p>
+                    <p>tourkeris2024@gmail.com</p>
+                    <p>kerissumenep2024@gmail.com</p>
                   </div>
                   <div className="single-contact">
                     <div className="contact-icon">
@@ -839,7 +839,6 @@ export default function LandingPage() {
           <script src="/assets-landing-page/assets/js/vendor/jquery.easing.1.3.js"></script>
           <script src="/assets-landing-page/assets/js/vendor/jquery-migrate-1.2.1.min.js"></script>
           <script src="/assets-landing-page/assets/js/vendor/jquery.appear.js"></script>
-
           <script src="/assets-landing-page/assets/js/owl.carousel.min.js"></script>
           <script src="/assets-landing-page/assets/js/isotope.pkgd.min.js"></script>
           <script src="/assets-landing-page/assets/js/stellar.js"></script>
@@ -857,7 +856,6 @@ export default function LandingPage() {
           <script src="/assets-landing-page/assets/js/footer-reveal.min.js"></script>
           <script src="/assets-landing-page/assets/js/ResizeSensor.min.js"></script>
           <script src="/assets-landing-page/assets/js/theia-sticky-sidebar.min.js"></script>
-
           <script src="/assets-landing-page/assets/js/main.js"></script>
         </Helmet>
       </div>
