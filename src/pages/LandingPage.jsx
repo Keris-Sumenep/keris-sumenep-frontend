@@ -626,80 +626,60 @@ export default function LandingPage() {
               </div>
               <div className="col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12">
                 <div className="contact-form mb50">
-                  <form
-                    action="https://yourwebsite.com/process.php"
-                    id="contact-form"
-                    method="post"
-                  >
-                    <div className="row">
-                      <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div className="form-group" id="name-field">
-                          <div className="form-input">
-                            <label for="form-name">Nama Anda</label>
-                            <input
-                              type="text"
-                              className="form-control"
-                              id="form-name"
-                              name="form-name"
-                              placeholder="Nama Lengkap"
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div className="form-group" id="email-field">
-                          <div className="form-input">
-                            <label for="form-email">Email Anda</label>
-                            <input
-                              type="email"
-                              className="form-control"
-                              id="form-email"
-                              name="form-email"
-                              placeholder="email@domain.com"
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div className="form-group" id="subject-field">
-                          <div className="form-input">
-                            <label for="form-subject">Subjek</label>
-                            <input
-                              type="text"
-                              className="form-control"
-                              id="form-subject"
-                              name="form-subject"
-                              placeholder="Subjek Pesan"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div className="form-group" id="message-field">
-                          <div className="form-input">
-                            <label for="form-message">Pesan Anda</label>
-                            <textarea
-                              className="form-control"
-                              rows="6"
-                              id="form-message"
-                              name="form-message"
-                              placeholder="Tuliskan pesan Anda di sini"
-                              required
-                            ></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div className="form-group mb0">
-                          <button className="read-more active" type="submit">
-                            Kirim Pesan
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+                <form name="submit-to-google-sheet">
+      <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+          <div class="form-group" id="name-field">
+            <div class="form-input">
+              <label for="form-name">Nama Anda</label>
+              <input
+                type="text"
+                name="form-name"
+                placeholder="Nama Lengkap"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+          <div class="form-group" id="email-field">
+            <div class="form-input">
+              <label for="form-email">Email Anda</label>
+              <input
+                type="email"
+                name="form-email"
+                placeholder="email@domain.com"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+          <div class="form-group" id="message-field">
+            <div class="form-input">
+              <label for="form-message">Pesan Anda</label>
+              <textarea
+                rows="6"
+                name="form-message"
+                placeholder="Tuliskan pesan Anda di sini"
+                class="form-control"
+                required
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+          <div class="form-group mb-0">
+            <button type="submit" class="btn btn-primary">
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              <span class="button-text">Kirim Pesan</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
                 </div>
               </div>
             </div>
@@ -834,6 +814,7 @@ export default function LandingPage() {
         </footer> */}
 
         <Helmet>
+        <script src="/assets-landing-page/assets/js/form.js"></script>
           <script src="/assets-landing-page/assets/js/vendor/jquery-1.12.4.min.js"></script>
           <script src="/assets-landing-page/assets/js/vendor/bootstrap.min.js"></script>
           <script src="/assets-landing-page/assets/js/vendor/jquery.easing.1.3.js"></script>
