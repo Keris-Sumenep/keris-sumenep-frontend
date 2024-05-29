@@ -237,7 +237,7 @@ export default function LandingPage() {
                       <i className="fa fa-play"></i>
                     </button>
                   </div>
-                  <h3>Tonton Video Presentasi</h3>
+                  <h3>Tonton Video Tutorial</h3>
                   <p>Pelajari lebih lanjut tentang aplikasi TourKeris yang dapat memindai barcode pada setiap keris dan memberikan informasi lengkap dalam berbagai bahasa, termasuk Bahasa Madura, Inggris, dan Indonesia.</p>
                 </div>
               </div>
@@ -585,30 +585,30 @@ export default function LandingPage() {
         </footer> */}
 
         <Helmet>
-          <script src="/assets-landing-page/assets/js/form.js"></script>
-          <script src="/assets-landing-page/assets/js/vendor/jquery-1.12.4.min.js"></script>
-          <script src="/assets-landing-page/assets/js/vendor/bootstrap.min.js"></script>
-          <script src="/assets-landing-page/assets/js/vendor/jquery.easing.1.3.js"></script>
-          <script src="/assets-landing-page/assets/js/vendor/jquery-migrate-1.2.1.min.js"></script>
-          <script src="/assets-landing-page/assets/js/vendor/jquery.appear.js"></script>
-          <script src="/assets-landing-page/assets/js/owl.carousel.min.js"></script>
-          <script src="/assets-landing-page/assets/js/isotope.pkgd.min.js"></script>
-          <script src="/assets-landing-page/assets/js/stellar.js"></script>
-          <script src="/assets-landing-page/assets/js/jquery.parallax-layer-scroll.js"></script>
-          <script src="/assets-landing-page/assets/js/chaffle.min.js"></script>
-          <script src="/assets-landing-page/assets/js/anime.min.js"></script>
-          <script src="/assets-landing-page/assets/js/jquery-modal-video.min.js"></script>
-          <script src="/assets-landing-page/assets/js/venobox.min.js"></script>
-          <script src="/assets-landing-page/assets/js/stellarnav.min.js"></script>
-          <script src="/assets-landing-page/assets/js/jquery.sticky.js"></script>
-          <script src="/assets-landing-page/assets/js/wow.min.js"></script>
-          <script src="/assets-landing-page/assets/js/placeholdem.min.js"></script>
-          <script src="/assets-landing-page/assets/js/odometer.min.js"></script>
-          <script src="/assets-landing-page/assets/js/contact-form.js"></script>
-          <script src="/assets-landing-page/assets/js/footer-reveal.min.js"></script>
-          <script src="/assets-landing-page/assets/js/ResizeSensor.min.js"></script>
-          <script src="/assets-landing-page/assets/js/theia-sticky-sidebar.min.js"></script>
-          <script src="/assets-landing-page/assets/js/main.js"></script>
+          <script src="../assets-landing-page/assets/js/form.js"></script>
+          <script src="../assets-landing-page/assets/js/vendor/jquery-1.12.4.min.js"></script>
+          <script src="../assets-landing-page/assets/js/vendor/bootstrap.min.js"></script>
+          <script src="../assets-landing-page/assets/js/vendor/jquery.easing.1.3.js"></script>
+          <script src="../assets-landing-page/assets/js/vendor/jquery-migrate-1.2.1.min.js"></script>
+          <script src="../assets-landing-page/assets/js/vendor/jquery.appear.js"></script>
+          <script src="../assets-landing-page/assets/js/owl.carousel.min.js"></script>
+          <script src="../assets-landing-page/assets/js/isotope.pkgd.min.js"></script>
+          <script src="../assets-landing-page/assets/js/stellar.js"></script>
+          <script src="../assets-landing-page/assets/js/jquery.parallax-layer-scroll.js"></script>
+          <script src="../assets-landing-page/assets/js/chaffle.min.js"></script>
+          <script src="../assets-landing-page/assets/js/anime.min.js"></script>
+          <script src="../assets-landing-page/assets/js/jquery-modal-video.min.js"></script>
+          <script src="../assets-landing-page/assets/js/venobox.min.js"></script>
+          <script src="../assets-landing-page/assets/js/stellarnav.min.js"></script>
+          <script src="../assets-landing-page/assets/js/jquery.sticky.js"></script>
+          <script src="../assets-landing-page/assets/js/wow.min.js"></script>
+          <script src="../assets-landing-page/assets/js/placeholdem.min.js"></script>
+          <script src="../assets-landing-page/assets/js/odometer.min.js"></script>
+          <script src="../assets-landing-page/assets/js/contact-form.js"></script>
+          <script src="../assets-landing-page/assets/js/footer-reveal.min.js"></script>
+          <script src="../assets-landing-page/assets/js/ResizeSensor.min.js"></script>
+          <script src="../assets-landing-page/assets/js/theia-sticky-sidebar.min.js"></script>
+          <script src="../assets-landing-page/assets/js/main.js"></script>
         </Helmet>
       </div>
     </>
