@@ -26,7 +26,7 @@ export default function Dashboard() {
       setExpire(decoded.exp);
     } catch (error) {
       if (error.response) {
-        navigate("/");
+        console.log(error);
       }
     }
   };

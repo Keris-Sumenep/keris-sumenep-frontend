@@ -1,13 +1,13 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 export default function UpdateBenda() {
   const [data, setData] = useState({
     id: null,
-    kode_benda: '',
-    nama: '',
-    deskripsi: '',
+    kode_benda: "",
+    nama: "",
+    deskripsi: "",
   });
   let { code } = useParams();
   const navigate = useNavigate();
@@ -49,7 +49,7 @@ export default function UpdateBenda() {
         }
       );
       console.log(response.data);
-      navigate('/benda');
+      navigate("/benda");
     } catch (error) {
       console.log(error);
     }
@@ -78,7 +78,7 @@ export default function UpdateBenda() {
                       placeholder="Nama Benda"
                       value={data.nama}
                       onChange={(e) => {
-                        handleEditDataChange('nama', e.target.value);
+                        handleEditDataChange("nama", e.target.value);
                       }}
                     />
                     <div className="input-group-append">
@@ -97,7 +97,7 @@ export default function UpdateBenda() {
                       placeholder="Deskripsi Benda"
                       value={data.deskripsi}
                       onChange={(e) => {
-                        handleEditDataChange('deskripsi', e.target.value);
+                        handleEditDataChange("deskripsi", e.target.value);
                       }}
                     ></textarea>
                     <div className="input-group-append">
@@ -112,7 +112,7 @@ export default function UpdateBenda() {
                 <button
                   type="button"
                   className="btn btn-rounded btn-warning btn-outline mr-1"
-                  onClick={() => navigate('/benda')}
+                  onClick={() => navigate("/benda")}
                 >
                   <i className="ti-trash"></i> Cancel
                 </button>

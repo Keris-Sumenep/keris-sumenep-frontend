@@ -228,8 +228,8 @@ export default function LandingPage() {
                       <a className="xs-mb20" href="#">
                         download
                       </a>
-                      <a href="/login">
-                        Login <i className="fa fa-long-arrow-right"></i>
+                      <a href="https://vtours.kerissumenep.com" target="_blank">
+                        Virtual Tour <i className="fa fa-long-arrow-right"></i>
                       </a>
                     </div>
                   </div>
