@@ -4,14 +4,12 @@ import { useNavigate } from "react-router-dom";
 
 export default function CreateBenda() {
   const [nama, setNama] = useState("");
-  const [deskripsi, setDeskripsi] = useState("");
   const navigate = useNavigate();
 
   const create = async (e) => {
     e.preventDefault();
     const data = {
       nama: nama,
-      deskripsi: deskripsi,
     };
     try {
       const response = await axios.post(
@@ -54,25 +52,7 @@ export default function CreateBenda() {
                       </span>
                     </div>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label>Deskripsi</label>
-                  <div class="input-group mb-3">
-                    <textarea
-                      rows="5"
-                      class="form-control"
-                      placeholder="About Project"
-                      onChange={(e) => {
-                        setDeskripsi(e.target.value);
-                      }}
-                    ></textarea>
-                    <div class="input-group-append">
-                      <span class="input-group-text">
-                        <i class="ti-pencil-alt2"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                </div>{" "}
               </div>
               <div class="box-footer text-right">
                 <button

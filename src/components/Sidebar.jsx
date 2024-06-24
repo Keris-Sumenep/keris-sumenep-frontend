@@ -59,6 +59,37 @@ const Sidebar = () => {
                 <span>Benda</span>
               </a>
             </li>
+            <li>
+              <a
+                href="/tour-guide"
+                style={{
+                  display: "flex",
+                  height: "auto",
+                  alignItems: "center",
+                  gap: "5px",
+                }}
+              >
+                <span
+                  class="mdi mdi-account-supervisor-circle"
+                  style={{ fontSize: "20px" }}
+                ></span>
+                <span>Tour Guide</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/setting"
+                style={{
+                  display: "flex",
+                  height: "auto",
+                  alignItems: "center",
+                  gap: "5px",
+                }}
+              >
+                <span class="mdi mdi-cogs" style={{ fontSize: "20px" }}></span>
+                <span>Setting</span>
+              </a>
+            </li>
           </ul>
         </section>
 

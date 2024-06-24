@@ -51,7 +51,7 @@ export default function CreateGambarBenda() {
   return (
     <>
       <div className="row">
-        <div className="col-lg-6 col-12">
+        <div className="col-lg-6 col-12 mx-auto">
           <div className="box">
             <div className="box-header with-border">
               <h4 className="box-title">Create Gambar Benda</h4>
@@ -77,7 +77,7 @@ export default function CreateGambarBenda() {
                   </div>
                 </div>
                 <div className="form-group">
-                  <label>Deskripsi</label>
+                  <label>Gambar Benda</label>
                   <div className="input-group mb-3">
                     <div className="custom-file">
                       <input

@@ -1,20 +1,20 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import QRCode from "qrcode.react";
+import { Link, useParams } from "react-router-dom";
 
 export default function GambarBenda() {
   const [data, setData] = useState([]);
+  let { code } = useParams();
   const getData = async () => {
     try {
       const response = await axios.get(
-        `${import.meta.env.VITE_APP_APIURL}/gambar-benda`,
+        `${import.meta.env.VITE_APP_APIURL}/benda/${code}`,
         {
           withCredentials: true,
         }
       );
       console.log(response.data);
-      setData(response.data.payload);
+      setData(response.data.payload.gambar_bendas);
     } catch (error) {
       console.log(error);
     }
@@ -44,16 +44,6 @@ export default function GambarBenda() {
           <div className="box">
             <div className="box-header with-border">
               <h4 className="box-title">Gambar Benda</h4>
-              <div className="box-controls pull-right">
-                <Link to={"/benda/create"}>
-                  <button
-                    type="button"
-                    className="btn btn-rounded btn-success mb-5"
-                  >
-                    CREATE
-                  </button>
-                </Link>
-              </div>
             </div>
             <div className="box-body no-padding">
               <div className="table-responsive">
@@ -61,9 +51,8 @@ export default function GambarBenda() {
                   <thead>
                     <tr>
                       <th>No.</th>
-                      <th>Kode</th>
-                      <th>Nama</th>
-                      <th>Deskripsi</th>
+                      <th>Gambar</th>
+                      <th>Judul</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -74,15 +63,24 @@ export default function GambarBenda() {
                           <tr>
                             <td>{index + 1}</td>
                             <td>
-                              <QRCode value={value.kode_benda} />
+                              <img
+                                src={`${
+                                  import.meta.env.VITE_APP_BASEURL
+                                }/foto-benda/${value.gambar}`}
+                                alt=""
+                                className=""
+                                style={{
+                                  width: "300px",
+                                  aspectRatio: "1/1",
+                                  objectFit: "cover",
+                                  boxSizing: "border-box",
+                                }}
+                              />
                             </td>
-                            <td>
-                              <span className="text-muted">{value.nama}</span>{" "}
-                            </td>
-                            <td>{value.deskripsi}</td>
+                            <td>{value.judul}</td>
                             <td>
                               <div className="row" style={{ gap: "3px" }}>
-                                <Link to={`/benda/update/${value.kode_benda}`}>
+                                <Link to={`/gambar-benda/update/${value.id}`}>
                                   <button
                                     type="button"
                                     class="btn btn-sm btn-circle btn-primary mb-5"
@@ -94,7 +92,7 @@ export default function GambarBenda() {
                                   type="button"
                                   class="btn btn-sm btn-circle btn-danger mb-5"
                                   onClick={() => {
-                                    deleteBenda(value.kode_benda);
+                                    deleteBenda(value.id);
                                   }}
                                 >
                                   <i class="mdi mdi-delete"></i>

@@ -9,6 +9,24 @@ import CreateBenda from "../pages/benda/create";
 import UpdateBenda from "../pages/benda/update";
 import GambarBenda from "../pages/gambar-benda";
 import CreateGambarBenda from "../pages/gambar-benda/create";
+import CreateVideoBenda from "../pages/video-benda/create";
+import Deskripsi from "../pages/deskripsi";
+import CreateDeskripsi from "../pages/deskripsi/create";
+import DetailBenda from "../pages/benda/detail";
+import VoiceBenda from "../pages/voice-benda";
+import CreateVoiceBenda from "../pages/voice-benda/create";
+import TourGuide from "../pages/tour-gate";
+import CreateTourGuide from "../pages/tour-gate/create";
+import DetailTourGuide from "../pages/tour-gate/detail";
+import UpdateTourGuide from "../pages/tour-gate/update";
+import Setting from "../pages/setting";
+import CreateSetting from "../pages/setting/create";
+import UpdateSetting from "../pages/setting/update";
+import UpdateDeskripsi from "../pages/deskripsi/update";
+import UpdateGambarBenda from "../pages/gambar-benda/update";
+import VideoBenda from "../pages/video-benda";
+import UpdateVideoBenda from "../pages/video-benda/update";
+import UpdateVoiceBenda from "../pages/voice-benda/update";
 
 export default function DashboardLayout() {
   return (
@@ -50,16 +68,82 @@ https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/scripts/verify.min.js
                   {/* route benda */}
                   <Route path="/benda" element={<Benda />} />
                   <Route path="/benda/create" element={<CreateBenda />} />
+                  <Route path="/benda/detail/:code" element={<DetailBenda />} />
                   <Route path="/benda/update/:code" element={<UpdateBenda />} />
                   {/* route benda */}
 
+                  {/* route deskripsi benda */}
+                  <Route path="/deskripsi/:code" element={<Deskripsi />} />
+                  <Route
+                    path="/deskripsi/create/:code"
+                    element={<CreateDeskripsi />}
+                  />
+                  <Route
+                    path="/deskripsi/update/:code"
+                    element={<UpdateDeskripsi />}
+                  />
                   {/* route gambar benda */}
-                  <Route path="/gambar-benda" element={<GambarBenda />} />
+
+                  {/* route gambar benda */}
+                  <Route path="/gambar-benda/:code" element={<GambarBenda />} />
                   <Route
                     path="/gambar-benda/create/:code"
                     element={<CreateGambarBenda />}
                   />
+                  <Route
+                    path="/gambar-benda/update/:code"
+                    element={<UpdateGambarBenda />}
+                  />
                   {/* route gambar benda */}
+
+                  {/* route video benda */}
+                  <Route path="/video-benda/:code" element={<VideoBenda />} />
+                  <Route
+                    path="/video-benda/create/:code"
+                    element={<CreateVideoBenda />}
+                  />
+                  <Route
+                    path="/video-benda/update/:code"
+                    element={<UpdateVideoBenda />}
+                  />
+                  {/* route video benda */}
+
+                  {/* route voice benda */}
+                  <Route path="/voice-benda/:code" element={<VoiceBenda />} />
+                  <Route
+                    path="/voice-benda/create/:code"
+                    element={<CreateVoiceBenda />}
+                  />
+                  <Route
+                    path="/voice-benda/update/:code"
+                    element={<UpdateVoiceBenda />}
+                  />
+                  {/* route voice benda */}
+
+                  {/* route tour guide */}
+                  <Route path="/tour-guide" element={<TourGuide />} />
+                  <Route
+                    path="/tour-guide/create"
+                    element={<CreateTourGuide />}
+                  />
+                  <Route
+                    path="/tour-guide/:code"
+                    element={<DetailTourGuide />}
+                  />
+                  <Route
+                    path="/tour-guide/update/:code"
+                    element={<UpdateTourGuide />}
+                  />
+                  {/* route tour guide */}
+
+                  {/* route setting */}
+                  <Route path="/setting" element={<Setting />} />
+                  <Route path="/setting/create" element={<CreateSetting />} />
+                  <Route
+                    path="/setting/update/:code"
+                    element={<UpdateSetting />}
+                  />
+                  {/* route setting */}
                 </Routes>
               </section>
             </div>

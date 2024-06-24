@@ -7,7 +7,6 @@ export default function UpdateBenda() {
     id: null,
     kode_benda: "",
     nama: "",
-    deskripsi: "",
   });
   let { code } = useParams();
   const navigate = useNavigate();
@@ -84,25 +83,6 @@ export default function UpdateBenda() {
                     <div className="input-group-append">
                       <span className="input-group-text">
                         <i className="ti-user"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="form-group">
-                  <label>Deskripsi</label>
-                  <div className="input-group mb-3">
-                    <textarea
-                      rows="5"
-                      className="form-control"
-                      placeholder="Deskripsi Benda"
-                      value={data.deskripsi}
-                      onChange={(e) => {
-                        handleEditDataChange("deskripsi", e.target.value);
-                      }}
-                    ></textarea>
-                    <div className="input-group-append">
-                      <span className="input-group-text">
-                        <i className="ti-pencil-alt2"></i>
                       </span>
                     </div>
                   </div>

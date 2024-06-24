@@ -63,7 +63,6 @@ export default function Benda() {
                       <th>No.</th>
                       <th>Kode</th>
                       <th>Nama</th>
-                      <th>Deskripsi</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -79,7 +78,6 @@ export default function Benda() {
                             <td>
                               <span className="text-muted">{value.nama}</span>{" "}
                             </td>
-                            <td>{value.deskripsi}</td>
                             <td>
                               <div className="row" style={{ gap: "3px" }}>
                                 <Link to={`/benda/update/${value.kode_benda}`}>
@@ -99,6 +97,14 @@ export default function Benda() {
                                 >
                                   <i className="mdi mdi-delete"></i>
                                 </button>
+                                <Link to={`/benda/detail/${value.kode_benda}`}>
+                                  <button
+                                    type="button"
+                                    className="btn btn-sm btn-circle btn-warning mb-5"
+                                  >
+                                    <i className="mdi mdi-information-outline"></i>
+                                  </button>
+                                </Link>
                                 <div className="btn-group">
                                   <button
                                     className="btn btn-sm btn-circle btn-secondary dropdown-toggle no-caret"
@@ -114,15 +120,27 @@ export default function Benda() {
                                   >
                                     <Link
                                       className="dropdown-item"
+                                      to={`/deskripsi/create/${value.kode_benda}`}
+                                    >
+                                      Create Deskripsi
+                                    </Link>
+                                    <Link
+                                      className="dropdown-item"
                                       to={`/gambar-benda/create/${value.kode_benda}`}
                                     >
                                       Create Gambar
                                     </Link>
-                                    <Link className="dropdown-item" href="#">
+                                    <Link
+                                      className="dropdown-item"
+                                      to={`/video-benda/create/${value.kode_benda}`}
+                                    >
                                       Create Video
                                     </Link>
-                                    <Link className="dropdown-item" href="#">
-                                      Create Audio
+                                    <Link
+                                      className="dropdown-item"
+                                      to={`/voice-benda/create/${value.kode_benda}`}
+                                    >
+                                      Create Voice
                                     </Link>
                                   </div>
                                 </div>
