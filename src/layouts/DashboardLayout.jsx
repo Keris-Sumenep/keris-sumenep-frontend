@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
@@ -27,8 +27,17 @@ import UpdateGambarBenda from "../pages/gambar-benda/update";
 import VideoBenda from "../pages/video-benda";
 import UpdateVideoBenda from "../pages/video-benda/update";
 import UpdateVoiceBenda from "../pages/voice-benda/update";
+import { useEffect } from "react";
 
 export default function DashboardLayout() {
+  let token = localStorage.getItem("token");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!token) {
+      navigate("/login");
+    }
+  });
   return (
     <>
       <Helmet>

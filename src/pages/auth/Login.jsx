@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 
@@ -7,6 +7,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
+  let token = localStorage.getItem("token");
   const navigate = useNavigate();
 
   const auth = async (e) => {
@@ -16,12 +17,17 @@ export default function Login() {
       password,
     };
     try {
-      await axios.post(`${import.meta.env.VITE_APP_APIURL}/login`, data, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-        withCredentials: true,
-      });
+      const response = await axios.post(
+        `${import.meta.env.VITE_APP_APIURL}/login`,
+        data,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          withCredentials: true,
+        }
+      );
+      localStorage.setItem("token", response.data.accessToken);
       navigate("/dashboard");
     } catch (error) {
       if (error.response) {
@@ -30,6 +36,12 @@ export default function Login() {
       }
     }
   };
+
+  useEffect(() => {
+    if (token) {
+      navigate("/dashboard");
+    }
+  });
   return (
     <>
       <Helmet>
